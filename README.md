@@ -1,6 +1,6 @@
 
 
-![](BorderlandsGOTY_Money/Images/FormPicture.png)
+![](/Images/FormPicture.png)
 
 
 
