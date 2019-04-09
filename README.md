@@ -16,8 +16,10 @@ ClickNShare is a DotNet simple Screenshot Saving & Sharing tool with a few featu
 
 - [x] Capture monitors
 - [x] Save to specific path
-- [ ] Hotkeys
 - [ ] Upload functions
+- [ ] List of captured screenshots
+- [ ] Hotkeys
+
 
 ## Developed by :
 * Sehyn
