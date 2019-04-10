@@ -8,7 +8,7 @@
 ClickNShare is a DotNet simple Screenshot Saving & Sharing tool with a few features such as :
 * Capture your monitor screen
 * Save them to specific path
-* Upload them directly to github
+* Upload them directly to Imgur
 
 **More features will be added.**
 
