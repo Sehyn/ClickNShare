@@ -34,6 +34,7 @@
             this.SetFolderPath = new System.Windows.Forms.FolderBrowserDialog();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.UploadBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TakeScreenshotBtn
@@ -49,7 +50,7 @@
             // LogTxtBox
             // 
             this.LogTxtBox.Enabled = false;
-            this.LogTxtBox.Location = new System.Drawing.Point(12, 90);
+            this.LogTxtBox.Location = new System.Drawing.Point(12, 114);
             this.LogTxtBox.Multiline = true;
             this.LogTxtBox.Name = "LogTxtBox";
             this.LogTxtBox.ReadOnly = true;
@@ -69,7 +70,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 71);
+            this.label1.Location = new System.Drawing.Point(13, 95);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 3;
@@ -78,23 +79,35 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 71);
+            this.label2.Location = new System.Drawing.Point(45, 95);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "[!] Path not set";
+            // 
+            // UploadBtn
+            // 
+            this.UploadBtn.Location = new System.Drawing.Point(12, 70);
+            this.UploadBtn.Name = "UploadBtn";
+            this.UploadBtn.Size = new System.Drawing.Size(386, 23);
+            this.UploadBtn.TabIndex = 5;
+            this.UploadBtn.Text = "Upload";
+            this.UploadBtn.UseVisualStyleBackColor = true;
+            this.UploadBtn.Click += new System.EventHandler(this.UploadBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 225);
+            this.Controls.Add(this.UploadBtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.LogTxtBox);
             this.Controls.Add(this.TakeScreenshotBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "[#] Click N Share [#v.0.1]";
             this.ResumeLayout(false);
@@ -110,6 +123,7 @@
         private System.Windows.Forms.FolderBrowserDialog SetFolderPath;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button UploadBtn;
     }
 }
 
