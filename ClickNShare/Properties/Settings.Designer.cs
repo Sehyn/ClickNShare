@@ -34,5 +34,41 @@ namespace ClickNShare.Properties {
                 this["SavingPath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LastScreenPath {
+            get {
+                return ((string)(this["LastScreenPath"]));
+            }
+            set {
+                this["LastScreenPath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LastUploadLink {
+            get {
+                return ((string)(this["LastUploadLink"]));
+            }
+            set {
+                this["LastUploadLink"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LastScreenSize {
+            get {
+                return ((string)(this["LastScreenSize"]));
+            }
+            set {
+                this["LastScreenSize"] = value;
+            }
+        }
     }
 }
