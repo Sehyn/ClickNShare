@@ -41,7 +41,7 @@ ClickNShare is a DotNet simple Screenshot Saving & Sharing tool with a few featu
 
 ## Credits : 
 * ShareX for the idea
-* Eli0tt for the help! (https://github.com/Eli0tt)
+* Eli0tt for the file size help! (https://github.com/Eli0tt)
 
 ## Using Library :
 https://github.com/DamienDennehy/Imgur.API
