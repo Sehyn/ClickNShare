@@ -183,7 +183,7 @@ namespace ClickNShare
         {
             if (SavingPath.Text == "")
             {
-                MessageBox.Show("You must specify a path to save your screenshots!", "Path is missing!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You must specify a path to save & upload your screenshots!", "Path is missing!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             else
@@ -217,5 +217,54 @@ namespace ClickNShare
 
             }
         }
+
+        private void OpenPathFolderBtn_Click(object sender, EventArgs e)
+        {
+            //Opens the folder where you save the capture
+            try
+            {
+                Process.Start(SavingPath.Text);
+                LogTxtBox.AppendText("[" + DateTime.Now.ToShortTimeString() + "] Openned saving path folder." + Environment.NewLine);
+
+            }
+            catch(Exception)
+            {
+                LogTxtBox.AppendText("[" + DateTime.Now.ToShortTimeString() + "] You must set a path before opening the saved path folder." + Environment.NewLine);
+
+            }
+
+
+
+        }
+
+        private void ResetPathBtn_Click(object sender, EventArgs e)
+        {
+            //Resets the path where files were used to be saved
+            SavingPath.Text = "";
+            LogTxtBox.AppendText("[" + DateTime.Now.ToShortTimeString() + "] Reseted the saving path." + Environment.NewLine);
+
+        }
+
+        private void CaptureAndUpload_Click(object sender, EventArgs e)
+        {
+
+            TakeScreenShot();
+            Thread.Sleep(500);
+
+          
+
+            if (SavingPath.Text == "")
+            {
+                MessageBox.Show("You must specify a path to save & upload your screenshots!", "Path is missing!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+            {
+                UploadImage();
+
+            }
+        }
+
+     
     }
 }

@@ -47,6 +47,9 @@
             this.UploadLinkLbl = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.LastScreenLbl = new System.Windows.Forms.Label();
+            this.ResetPathBtn = new System.Windows.Forms.Button();
+            this.OpenPathFolderBtn = new System.Windows.Forms.Button();
+            this.CaptureAndUpload = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -56,7 +59,7 @@
             // 
             this.TakeScreenshotBtn.Location = new System.Drawing.Point(6, 19);
             this.TakeScreenshotBtn.Name = "TakeScreenshotBtn";
-            this.TakeScreenshotBtn.Size = new System.Drawing.Size(386, 23);
+            this.TakeScreenshotBtn.Size = new System.Drawing.Size(125, 23);
             this.TakeScreenshotBtn.TabIndex = 0;
             this.TakeScreenshotBtn.Text = "Capture";
             this.TakeScreenshotBtn.UseVisualStyleBackColor = true;
@@ -76,7 +79,7 @@
             // 
             this.SetPathBtn.Location = new System.Drawing.Point(6, 48);
             this.SetPathBtn.Name = "SetPathBtn";
-            this.SetPathBtn.Size = new System.Drawing.Size(386, 23);
+            this.SetPathBtn.Size = new System.Drawing.Size(125, 23);
             this.SetPathBtn.TabIndex = 2;
             this.SetPathBtn.Text = "Set saving path";
             this.SetPathBtn.UseVisualStyleBackColor = true;
@@ -104,7 +107,7 @@
             // 
             this.UploadBtn.Location = new System.Drawing.Point(6, 77);
             this.UploadBtn.Name = "UploadBtn";
-            this.UploadBtn.Size = new System.Drawing.Size(386, 23);
+            this.UploadBtn.Size = new System.Drawing.Size(125, 23);
             this.UploadBtn.TabIndex = 5;
             this.UploadBtn.Text = "Upload";
             this.UploadBtn.UseVisualStyleBackColor = true;
@@ -112,6 +115,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.CaptureAndUpload);
+            this.groupBox1.Controls.Add(this.OpenPathFolderBtn);
+            this.groupBox1.Controls.Add(this.ResetPathBtn);
             this.groupBox1.Controls.Add(this.TakeScreenshotBtn);
             this.groupBox1.Controls.Add(this.UploadBtn);
             this.groupBox1.Controls.Add(this.SetPathBtn);
@@ -223,6 +229,36 @@
             this.LastScreenLbl.TabIndex = 9;
             this.LastScreenLbl.Text = "No previous screenshots.";
             // 
+            // ResetPathBtn
+            // 
+            this.ResetPathBtn.Location = new System.Drawing.Point(137, 48);
+            this.ResetPathBtn.Name = "ResetPathBtn";
+            this.ResetPathBtn.Size = new System.Drawing.Size(125, 23);
+            this.ResetPathBtn.TabIndex = 6;
+            this.ResetPathBtn.Text = "Reset path";
+            this.ResetPathBtn.UseVisualStyleBackColor = true;
+            this.ResetPathBtn.Click += new System.EventHandler(this.ResetPathBtn_Click);
+            // 
+            // OpenPathFolderBtn
+            // 
+            this.OpenPathFolderBtn.Location = new System.Drawing.Point(268, 48);
+            this.OpenPathFolderBtn.Name = "OpenPathFolderBtn";
+            this.OpenPathFolderBtn.Size = new System.Drawing.Size(125, 23);
+            this.OpenPathFolderBtn.TabIndex = 7;
+            this.OpenPathFolderBtn.Text = "Open path folder";
+            this.OpenPathFolderBtn.UseVisualStyleBackColor = true;
+            this.OpenPathFolderBtn.Click += new System.EventHandler(this.OpenPathFolderBtn_Click);
+            // 
+            // CaptureAndUpload
+            // 
+            this.CaptureAndUpload.Location = new System.Drawing.Point(137, 19);
+            this.CaptureAndUpload.Name = "CaptureAndUpload";
+            this.CaptureAndUpload.Size = new System.Drawing.Size(125, 23);
+            this.CaptureAndUpload.TabIndex = 8;
+            this.CaptureAndUpload.Text = "Capture and Upload";
+            this.CaptureAndUpload.UseVisualStyleBackColor = true;
+            this.CaptureAndUpload.Click += new System.EventHandler(this.CaptureAndUpload_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -269,6 +305,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label SizeLbl;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button OpenPathFolderBtn;
+        private System.Windows.Forms.Button ResetPathBtn;
+        private System.Windows.Forms.Button CaptureAndUpload;
     }
 }
 
